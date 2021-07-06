@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const uluru = { lat: -25.344, lng: 131.036 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+        </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main__wrapper">
+        <div class="main__header__wrapper">
+            <div class="header">
+                <div class="logo">
+                    <img src="myTheme/img/logo.png">
+                    <div>
+                        <p>WKS Sobieski Arena Żagań</p>
+                        <p>Official Website</p>
+                    </div>                    
+                </div>
+                <div class="header__text">
+                    <span>#</span>ŻAGAŃ <span>GÓRĄ</span>
+                </div>
+                <div class="hamburger">
+                    <div class="link"></div>
+                    <div class="link"></div>
+                    <div class="link"></div>
+                </div>
+            </div>
+            <div class="nav__wrapper">
+               
+                
+                <div class="nav">
+                    <a href="file:///C:/Users/patry/Desktop/kurs%20html/html/Strona%20zagan/index2.html"><div class="nav__item">Strona Główna</div></a>
+                    <a href="file:///C:/Users/patry/Desktop/kurs%20html/html/Strona%20zagan/aktualnosci.html"><div class="nav__item">Aktualności</div></a>
+                    <a href=""><div class="nav__item">Sponsorzy</div></a>
+                    <a href=""><div class="nav__item">Klub</div></a>
+                    <a href="file:///C:/Users/patry/Desktop/kurs%20html/html/Strona%20zagan/galery.html"><div class="nav__item">Galeria</div></a>
+                    <a href=""><div class="nav__item">Kontakt</div></a>
+                </div>
+               
+            </div>
+
+        </div>
+
+
+        <div class="main-article__wrapper kontakt">
+            <div class="contact-info">
+                <h4>Kontakt</h4>
+                <div class="social-media-bar">
+                    <div class="social-media-item"><i class="fab fa-facebook-f"></i></div>
+                    <div class="social-media-item"><i class="fab fa-instagram"></i></div>
+                    <div class="social-media-item"><i class="fab fa-youtube"></i></div>
+                    <div class="social-media-item"><i class="fab fa-twitter"></i></div>
+                </div>
+                <p><span><i class="fas fa-envelope-open-text"></i></span> wkssobieskizagan@wp.pl</p>
+                <p><span><i class="fas fa-map-marker-alt"></i>Adres:</span> Jana Kochanowskiego 6, </p>
+                <p>68-100 Żagań</p>
+                <!-- <p><span>E-mail:</span></p> -->
+
+
+            </div>
+            
+            
+            <div id="map">
+                <iframe  class="desktop-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.422108287648!2d15.29959436592802!3d51.61547646061604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4708a6a832d914db%3A0xe550d9cc1c3525e4!2zQXJlbmEgxbthZ2HFhA!5e0!3m2!1spl!2spl!4v1613334971375!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe class="mobile-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.422108287648!2d15.29959436592802!3d51.61547646061604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4708a6a832d914db%3A0xe550d9cc1c3525e4!2zQXJlbmEgxbthZ2HFhA!5e0!3m2!1spl!2spl!4v1613334971375!5m2!1spl!2spl" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <!-- <script
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+            async
+          ></script> -->
+
+        </div>
+
+
+       
+      
